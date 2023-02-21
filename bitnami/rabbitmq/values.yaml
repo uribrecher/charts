@@ -1125,7 +1125,7 @@ networkPolicy:
 metrics:
   ## @param metrics.enabled Enable exposing RabbitMQ metrics to be gathered by Prometheus
   ##
-  enabled: false
+  enabled: true 
   ## @param metrics.plugins Plugins to enable Prometheus metrics in RabbitMQ
   ##
   plugins: "rabbitmq_prometheus"
@@ -1201,7 +1201,7 @@ metrics:
   prometheusRule:
     ## @param metrics.prometheusRule.enabled Set this to true to create prometheusRules for Prometheus operator
     ##
-    enabled: false
+    enabled: true 
     ## @param metrics.prometheusRule.additionalLabels Additional labels that can be used so prometheusRules will be discovered by Prometheus
     ##
     additionalLabels: {}
